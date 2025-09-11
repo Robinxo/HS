@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap");
+@font-face {
+  font-family: Kenao;
+  src: url("../src/assets/fonts/Kenao.otf");
+}
+
+@import "tailwindcss";
+
+@theme {
+  --font-Kenao: Kenao, "sans-serif";
+  --font-Bricolage: Bricolage Grotesque, "sans-serif";
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 20px 5px rgba(250, 204, 21, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 30px 10px rgba(250, 204, 21, 0.6);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2.5s infinite;
+}

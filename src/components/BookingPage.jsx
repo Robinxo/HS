@@ -23,7 +23,7 @@ Tanvi Premium offers stylish rooms, modern amenities, and warm hospitality for b
       id: "banquets",
       name: "Events & Ocassions",
       image: "/bg.jpg",
-      description: "Our banquet hall is the perfect venue for weddings, receptions, parties, and corporate gatherings. Book an appointment to visit or give us a call for inquiries.",
+      description: "Our banquet hall is the perfect venue for weddings, receptions, parties, and corporate gatherings. Book an appointment to visit or give us a call for inquiries",
     },
   ];
 

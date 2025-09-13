@@ -11,7 +11,7 @@ export default function HeroSection() {
     >
       <div className="relative z-10 text-center px-4 sm:px-6 md:px-8 py-12 font-Bricolage">
         <h2 className="text-4xl md:text-6xl font-bold text-yellow-400 drop-shadow-[3px_2px_0px_rgba(0,0,0,0.8)]">
-          TANVI GROUP&apos;
+          TANVI GROUP
         </h2>
         <h1 className="text-6xl md:text-9xl font-extrabold text-yellow-400 drop-shadow-[4px_2px_0px_rgba(0,0,0,0.8)] mb-4">
           Hotels & Resort

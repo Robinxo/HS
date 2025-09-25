@@ -61,8 +61,7 @@ export default function Testimonials() {
     speed: 600,
     slidesToShow: 3,
     slidesToScroll: 1,
-    centerMode: true,
-    centerPadding: '40px',
+    centerMode: false, // better for mobile
     autoplay: true,
     autoplaySpeed: 3000,
     nextArrow: <NextArrow />,
@@ -70,9 +69,12 @@ export default function Testimonials() {
     responsive: [
       {
         breakpoint: 1024,
-        settings: { slidesToShow: 2, centerPadding: '30px' },
+        settings: { slidesToShow: 2, slidesToScroll: 1, centerMode: false },
       },
-      { breakpoint: 640, settings: { slidesToShow: 1, centerPadding: '20px' } },
+      {
+        breakpoint: 640,
+        settings: { slidesToShow: 1, slidesToScroll: 1, centerMode: false },
+      },
     ],
   };
 
@@ -103,11 +105,10 @@ export default function Testimonials() {
             <h3 className='text-center mb-6 text-gray-600 tracking-widest uppercase'>
               Hear from our guests
             </h3>
-
             <Slider {...settings}>
               {reviews.map((review, idx) => (
                 <div key={idx} className='px-2'>
-                  <div className='bg-white/80 rounded-xl shadow p-6 min-w-[250px] flex flex-col'>
+                  <div className='bg-white/80 rounded-xl shadow p-6 w-full flex flex-col'>
                     <h4 className='font-semibold'>{review.name}</h4>
                     <p className='text-xs text-gray-500'>{review.date}</p>
                     <div className='flex my-2'>

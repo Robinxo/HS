@@ -1,7 +1,5 @@
 import { useState } from 'react';
 import Logo from '../assets/Logo.png';
-import { GoogleLogin } from '@react-oauth/google';
-import { jwtDecode } from 'jwt-decode';
 import { useAuth } from '../context/useAuth.js';
 
 export default function Navbar() {

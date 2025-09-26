@@ -8,11 +8,7 @@ export default function Layout({ children }) {
     <div className='min-h-screen flex flex-col bg-white'>
       <Navbar />
       <main className='flex-1'>{children}</main>
-      <WhatsAppBubble
-        phone='919876543210'
-        message='Hello, I need help with a booking.'
-        showBadge
-      />
+      <WhatsAppBubble showBadge />
       <Testimonials />
       <Footer />
     </div>

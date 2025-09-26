@@ -1,4 +1,37 @@
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+export const Resortimages = [
+  {
+    src: '/aboutBG.png',
+    alt: 'Garden Resort',
+    className: 'md:w-1/2 object-cover',
+  },
+  {
+    src: '/aboutBG.png',
+    alt: 'Garden Resort',
+    className: 'md:w-1/2 object-cover',
+  },
+  {
+    src: '/aboutBG.png',
+    alt: 'Garden Resort',
+    className: 'md:w-1/2 object-cover',
+  },
+];
+
 export default function ResortReservation() {
+  const settings = {
+    infinite: true,
+    speed: 700,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: true,
+    centerPadding: '1px',
+    autoplay: true,
+    autoplaySpeed: 3000,
+  };
+
   return (
     <section
       className='py-12 px-6 text-white min-h-screen'
@@ -15,11 +48,20 @@ export default function ResortReservation() {
       <div className='max-w-5xl mx-auto space-y-10'>
         {/* Garden Resort Card */}
         <div className='flex flex-col md:flex-row bg-gradient-to-r from-yellow-100 to-yellow-200 text-[#0B1A33] rounded-2xl shadow-xl overflow-hidden'>
-          <img
-            src='/gardenResort.png'
-            alt='Garden Resort'
-            className='md:w-1/2 object-cover'
-          />
+          <div className='md:w-1/2'>
+            <Slider {...settings}>
+              {Resortimages.map((image, idx) => (
+                <div key={idx}>
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className='w-full h-105 object-cover'
+                  />
+                </div>
+              ))}
+            </Slider>
+          </div>
+
           <div className='flex-1 p-6 flex flex-col justify-between'>
             <div>
               <h3 className='text-2xl font-bold mb-3'>Garden Resort</h3>

@@ -1,6 +1,55 @@
 import { Crown } from 'lucide-react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+export const Deluxeimages = [
+  {
+    src: '/deluxe.png',
+    alt: 'Deluxe Room',
+    className: 'md:w-1/2 object-cover',
+  },
+  {
+    src: '/deluxe.png',
+    alt: 'Deluxe Room',
+    className: 'md:w-1/2 object-cover',
+  },
+  {
+    src: '/deluxe.png',
+    alt: 'Deluxe Room',
+    className: 'md:w-1/2 object-cover',
+  },
+];
+export const Premiumimages = [
+  {
+    src: '/deluxe.png',
+    alt: 'Deluxe Room',
+    className: 'md:w-1/2 object-cover',
+  },
+  {
+    src: '/deluxe.png',
+    alt: 'Deluxe Room',
+    className: 'md:w-1/2 object-cover',
+  },
+  {
+    src: '/deluxe.png',
+    alt: 'Deluxe Room',
+    className: 'md:w-1/2 object-cover',
+  },
+];
 
 export default function HotelRooms() {
+  const settings = {
+    infinite: true,
+    speed: 700,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: true,
+    centerPadding: '1px',
+    autoplay: true,
+    autoplaySpeed: 3000,
+  };
+
   return (
     <section
       className='py-12 px-6 text-white min-h-screen'
@@ -13,11 +62,19 @@ export default function HotelRooms() {
       <div className='max-w-5xl mx-auto space-y-10'>
         {/* Deluxe Room */}
         <div className='flex flex-col md:flex-row bg-gradient-to-r from-yellow-100 to-yellow-200 text-[#0B1A33] rounded-2xl shadow-xl overflow-hidden animate-pulse-glow'>
-          <img
-            src='/deluxe.png'
-            alt='Deluxe Room'
-            className='md:w-1/2 object-cover'
-          />
+          <div className='md:w-1/2'>
+            <Slider {...settings}>
+              {Deluxeimages.map((image, idx) => (
+                <div key={idx}>
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className='w-full h-95 object-cover'
+                  />
+                </div>
+              ))}
+            </Slider>
+          </div>
           <div className='flex-1 p-6 flex flex-col justify-between'>
             <div>
               <h3 className='text-2xl font-bold mb-3'>Deluxe Rooms</h3>
@@ -73,11 +130,19 @@ export default function HotelRooms() {
             </div>
           </div>
 
-          <img
-            src='/premium.png'
-            alt='Premium Room'
-            className='md:w-1/2 object-cover'
-          />
+          <div className='md:w-1/2'>
+            <Slider {...settings}>
+              {Premiumimages.map((image, idx) => (
+                <div key={idx}>
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className='w-full h-95 object-cover'
+                  />
+                </div>
+              ))}
+            </Slider>
+          </div>
         </div>
       </div>
     </section>

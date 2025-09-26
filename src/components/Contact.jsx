@@ -32,7 +32,7 @@ export default function ContactSection() {
             <p className='text-gray-200'>
               Call us anytime at{' '}
               <a href='tel:+919821841112' className='underline'>
-                +91-98765-43210
+                +91 9821841113
               </a>
             </p>
             <p className=' text-sm text-yellow-500'>

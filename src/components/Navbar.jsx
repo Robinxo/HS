@@ -94,10 +94,10 @@ export default function Navbar() {
             CONTACT
           </a>
           <a
-            href='tel:+919876543210'
+            href='tel:+919821841112'
             className='text-yellow-400 hover:text-white text-lg font-semibold'
           >
-            +91 9876543210
+            +91 9821841112
           </a>
         </div>
       )}

@@ -31,7 +31,7 @@ export default function BanquetBooking() {
 
           {/* Call Us Button */}
           <a
-            href='tel:+919876543210'
+            href='tel:+919821841112'
             className='flex items-center justify-center gap-2 bg-yellow-400 text-[#0B1A33] px-6 py-3 rounded-lg font-bold shadow hover:bg-yellow-300 transition'
           >
             <Phone className='w-5 h-5' />

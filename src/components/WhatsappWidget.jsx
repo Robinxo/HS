@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { X, MessageCircle } from 'lucide-react'; // icon library (lucide-react)
+import { X, MessageCircle } from 'lucide-react';
 import { FaWhatsapp } from 'react-icons/fa';
 
 function WhatsAppBubble() {

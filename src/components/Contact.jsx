@@ -22,9 +22,7 @@ export default function ContactSection() {
         </p>
       </div>
 
-      {/* Contact Info */}
       <div className='space-y-8 max-w-2xl text-left'>
-        {/* Phone */}
         <div className='flex items-start gap-4'>
           <Phone className='w-6 h-6 text-yellow-400 flex-shrink-0' />
           <div>
@@ -41,7 +39,6 @@ export default function ContactSection() {
           </div>
         </div>
 
-        {/* Email */}
         <div className='flex items-start gap-4'>
           <Mail className='w-6 h-6 text-yellow-400 flex-shrink-0' />
           <div>
@@ -73,7 +70,6 @@ export default function ContactSection() {
           </div>
         </div>
 
-        {/* Address */}
         <div className='flex items-start gap-4'>
           <MapPin className='w-6 h-6 text-yellow-400 flex-shrink-0' />
           <div>

@@ -1,5 +1,4 @@
 import { useNavigate } from 'react-router-dom';
-import Footer from '../components/footer.jsx';
 import Testimonials from '../components/Reviews.jsx';
 import PromoBanner from '../components/Promotion.jsx';
 import ResortLayout from '../components/herosectionextension.jsx';

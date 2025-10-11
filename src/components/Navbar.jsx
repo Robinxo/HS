@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import Logo from '../assets/Logo.png';
-import { useAuth } from '../context/useAuth.js';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);

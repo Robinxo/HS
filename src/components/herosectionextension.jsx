@@ -125,7 +125,7 @@ export default function ResortLayout() {
             <ul className='list-disc pl-6 text-sm sm:text-base space-y-1 mt-1 px-2 text-left'>
               <li>
                 Escape to paradise where luxury meets nature, and every moment
-                feels like a serene getaway.
+                feels like a serene getaway from everything.
               </li>
               <li>
                 Indulge in tranquility and adventure at our resort, your perfect
